@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script src="{% static 'js/script.js' %}"></script>
+	<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+	<div class="block"><h1>Current Time: {{time}}</h1></div>
+    <div class="block"><img src="{% static 'images/sethmon.jpg' %}" alt="Sethmon"><p>While at it, I may as well <span class="interact" onclick="hello()">just do more</span>.</p></div>
+</body>
+</html>
